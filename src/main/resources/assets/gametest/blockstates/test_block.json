@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "state=off": [{"model": "gametest:block/test_block_off"}],
+    "state=looking": [{"model": "gametest:block/test_block_looking"}],
+    "state=e404": [{"model": "gametest:block/test_block_404"}],
+    "state=working": [{"model": "gametest:block/test_block_working"}],
+    "state=ok": [{"model": "gametest:block/test_block_ok"}],
+    "state=warning": [{"model": "gametest:block/test_block_warning"}],
+    "state=error": [{"model": "gametest:block/test_block_error"}],
+    "state=item": [{"model": "gametest:block/test_block_item"}]
+  }
+}

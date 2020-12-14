@@ -1,0 +1,6 @@
+# Used for fixing a bug in NeighborsUpdateDebugRenderer without the need of complex ASM hooks
+
+# Un-final neighborsUpdate in debug renderer so that we can overwrite the value of this field
+public-f net.minecraft.client.renderer.debug.DebugRenderer field_191557_f # neighborsUpdate: public final -> public
+# Make constructor of NeighborsUpdateDebugRender protected to be able to inherit that class (prevents casting exceptions)
+protected net.minecraft.client.renderer.debug.NeighborsUpdateDebugRenderer <init>(Lnet/minecraft/client/Minecraft;)V # <init>: package-private -> protected

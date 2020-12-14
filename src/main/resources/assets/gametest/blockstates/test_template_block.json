@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "direction=nw": [{"model": "gametest:block/test_template_block_nw"}],
+    "direction=ne": [{"model": "gametest:block/test_template_block_ne"}],
+    "direction=se": [{"model": "gametest:block/test_template_block_se"}],
+    "direction=sw": [{"model": "gametest:block/test_template_block_sw"}]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "gametest:block/remote",
+  "textures": {
+    "texture": "gametest:block/test_remote_error"
+  }
+}

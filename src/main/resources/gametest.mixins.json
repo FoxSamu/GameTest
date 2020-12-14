@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "net.shadew.gametest.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "gametest.refmap.json",
+  "mixins": [
+    "WorldRendererMixin"
+  ],
+  "minVersion": "0.8.1"
+}

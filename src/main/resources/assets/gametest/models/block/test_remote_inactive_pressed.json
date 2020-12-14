@@ -1,0 +1,6 @@
+{
+  "parent": "gametest:block/remote_pressed",
+  "textures": {
+    "texture": "gametest:block/test_remote"
+  }
+}

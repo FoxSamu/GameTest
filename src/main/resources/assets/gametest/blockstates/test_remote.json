@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "state=inactive,pressed=false": [{"model": "gametest:block/test_remote_inactive"}],
+    "state=inactive,pressed=true": [{"model": "gametest:block/test_remote_inactive_pressed"}],
+    "state=working,pressed=false": [{"model": "gametest:block/test_remote_working"}],
+    "state=working,pressed=true": [{"model": "gametest:block/test_remote_working_pressed"}],
+    "state=ok,pressed=false": [{"model": "gametest:block/test_remote_ok"}],
+    "state=ok,pressed=true": [{"model": "gametest:block/test_remote_ok_pressed"}],
+    "state=warning,pressed=false": [{"model": "gametest:block/test_remote_warning"}],
+    "state=warning,pressed=true": [{"model": "gametest:block/test_remote_warning_pressed"}],
+    "state=error,pressed=false": [{"model": "gametest:block/test_remote_error"}],
+    "state=error,pressed=true": [{"model": "gametest:block/test_remote_error_pressed"}]
+  }
+}

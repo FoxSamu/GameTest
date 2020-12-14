@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "side": "gametest:block/test_template_side",
+    "bottom": "gametest:block/test_block",
+    "top": "gametest:block/test_template_sw"
+  }
+}

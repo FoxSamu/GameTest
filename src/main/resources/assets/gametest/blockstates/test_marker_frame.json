@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": [{"model": "gametest:block/test_marker_frame"}]
+  }
+}

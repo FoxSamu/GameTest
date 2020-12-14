@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[35,)"
+#issueTrackerURL="http://my.issue.tracker/"
+license="Apache License 2.0"
+[[mods]]
+modId="gametest"
+version="${file.jarVersion}"
+displayName="Game Test"
+#updateJSONURL="http://myurl.me/"
+#displayURL="http://example.com/"
+#logoFile="examplemod.png"
+credits="By Shadew"
+authors="Shadew"
+description='''
+This mod is a handy tool for modders who need more debug tools. Minecraft has many hidden debug tools that aren't accessible because Mojang cleared out the code that actually makes the debug tools work. This mod brings these debug tools back into Minecraft.
+
+Tools include:
+- Pathfinding debug: shows information about the paths that mobs are following
+- Structure debug: shows the boxes of structures and structure pieces
+- Neighbor update debug: shows the updates of neighbor blocks when a certain block changes its state
+- ...
+'''
+
+[[dependencies.gametest]]
+    modId="forge"
+    mandatory=true
+    versionRange="[35,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.gametest]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.4]"
+    ordering="NONE"
+    side="BOTH"
