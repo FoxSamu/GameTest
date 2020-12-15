@@ -1,28 +1,18 @@
 package net.shadew.gametest;
 
 import com.google.common.reflect.Reflection;
-import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandSource;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.projectile.ProjectileHelper;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.math.EntityRayTraceResult;
-import net.minecraft.util.math.vector.Matrix4f;
-import net.minecraft.util.math.vector.Vector3d;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.RenderWorldLastEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.eventbus.api.BusBuilder;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -36,7 +26,6 @@ import org.apache.logging.log4j.Logger;
 
 import net.shadew.gametest.blockitem.block.GameTestBlocks;
 import net.shadew.gametest.blockitem.block.GameTestBlocksClient;
-import net.shadew.gametest.blockitem.entity.FrameEntity;
 import net.shadew.gametest.blockitem.entity.GameTestEntityTypes;
 import net.shadew.gametest.blockitem.entity.renderer.EntityRenderRegistry;
 import net.shadew.gametest.blockitem.item.GameTestItems;
@@ -51,7 +40,6 @@ import net.shadew.gametest.framework.config.GameTestConfig;
 import net.shadew.gametest.framework.output.TestOutputManager;
 import net.shadew.gametest.framework.run.TestRunManager;
 import net.shadew.gametest.net.GameTestNet;
-import net.shadew.gametest.renderer.FixedNeighborsUpdateDebugRenderer;
 import net.shadew.gametest.screen.proxy.ClientScreenProxy;
 import net.shadew.gametest.screen.proxy.ScreenProxy;
 import net.shadew.gametest.util.RenderLayerUtil;
@@ -98,7 +86,7 @@ public class GameTestMod {
         EntityRenderRegistry.setup();
         RenderLayerUtil.init();
         // Fix bug in NeighborsUpdateDebugRenderer by using our own
-        Minecraft.getInstance().debugRenderer.neighborsUpdate = new FixedNeighborsUpdateDebugRenderer(Minecraft.getInstance());
+//        Minecraft.getInstance().debugRenderer.neighborsUpdate = new FixedNeighborsUpdateDebugRenderer(Minecraft.getInstance());
     }
 
     public static class EventHandler {
