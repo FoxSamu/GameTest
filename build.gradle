@@ -16,7 +16,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.0'
+version = '0.1'
 group = 'net.shadew.gametest'
 archivesBaseName = 'gametest'
 
@@ -105,13 +105,22 @@ jar.finalizedBy('reobfJar')
 
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+        maven( MavenPublication ) {
+            groupId = project.group
+            artifactId = 'gametest'
+            version = project.version
+
             artifact jar
         }
     }
     repositories {
         maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
+            name = "ShwMaven"
+            url = uri( "https://maven.shadew.net/" )
+            credentials {
+                username = shwMavenUser
+                password = shwMavenPass
+            }
         }
     }
 }
